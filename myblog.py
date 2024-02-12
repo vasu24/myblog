@@ -13,6 +13,7 @@ def load_lottieurl(url):
         return None
     return r.json()
 
+linkedinurl="https://www.linkedin.com/in/vasudevan-gajjala-16546715/"
 
 # Use local CSS
 def local_css(file_name):
@@ -43,11 +44,8 @@ with st.container():
             """
             - I work in a MNC as a Quality Engineer
             - Looking for a way to leverage the power of Cloud Computing, AI.
-            - Want to learn Data Science to perform meaningful and impactful analyses.
-
-            If this sounds intresting to you,consider joining me over linkedin(https://www.linkedin.com/in/vasudevan-gajjala-16546715/)
-
-            """)
+            - Want to learn Data Science to perform meaningful and impactful analyses. """)
+        st.write(" If this sounds intresting to you,consider joining me over [linkedin](%s)" % linkedinurl)
     
     with right_column:
         st_lottie(lottie_coding,height=300,key="coding")
