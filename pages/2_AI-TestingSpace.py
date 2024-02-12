@@ -27,12 +27,16 @@ with st.container():
               The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. 
               If most objects have a high value, then the clustering configuration is appropriate.""")
      st.write("How it works?")
-     st.write(""" 1. For each data point, the silhouette coefficient is calculated. This coefficient ranges from -1 to 1, where:""")
-     st.write("""   1: The point is well-clustered, meaning it is far away from points in other clusters and close to points in its own cluster.""")
-     st.write("""   0: The point is on the border of two clusters, and it's unclear which cluster it belongs to.""")
-     st.write("""  -1: The point is poorly clustered, meaning it is closer to points in other clusters than to points in its own cluster.""")
-     st.write(""" 2. The average silhouette coefficient across all data points is then calculated. 
-          This score provides an overall measure of the quality of the clustering. Higher scores indicate better clustering.""")         
+     st.write(
+            """
+            - For each data point, the silhouette coefficient is calculated. This coefficient ranges from -1 to 1, where
+            - 1: The point is well-clustered, meaning it is far away from points in other clusters and close to points in its own cluster
+            - 0: The point is on the border of two clusters, and it's unclear which cluster it belongs to.
+            - -1: The point is poorly clustered, meaning it is closer to points in other clusters than to points in its own cluster
+            - The average silhouette coefficient across all data points is then calculated. This score provides an overall 
+              measure of the quality of the clustering. Higher scores indicate better clustering. """)
+        
+             
      
      
             
