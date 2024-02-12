@@ -5,7 +5,7 @@ from PIL import Image
 
 # Function to get response from llama2
 # https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="My First Blog", page_icon=":tada", layout='wide')
+st.set_page_config(page_title="Vasudevan Blog", page_icon=":tada", layout='wide')
 
 def load_lottieurl(url):
     r = requests.get(url)
@@ -42,8 +42,8 @@ with st.container():
         st.header("What I do")
         st.write(
             """
-            - I work in a MNC as a Quality Engineer
-            - Looking for a way to leverage the power of Cloud Computing, AI.
+            - I work in an MNC as a Quality Engineer
+            - Looking for a way to leverage the power of Cloud Computing, Artificial Intelligence.
             - Want to learn Data Science to perform meaningful and impactful analyses. """)
         st.write(" If this sounds intresting to you,consider joining me over [linkedin](%s)" % linkedinurl)
     
