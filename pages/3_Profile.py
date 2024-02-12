@@ -23,7 +23,9 @@ with st.container():
         with text_column:
             st.subheader("SECURITY ORCHESTRATION, AUTOMATION, AND RESPONSE (SOAR) PLAYBOOK GENERATION")
             st.write("""
-                     Neural network based solution to generate SOAR playbooks as part of remediation actions for any new security alerts/incidents/cases created in SOC environment
+                     Neural network based solution to generate SOAR playbooks as part of remediation actions for any new 
+                     security alerts/incidents/cases created in SOC environment.
+                     Filed on September 26/2023 (18/372775)
                 """)
             
 with st.container():
@@ -50,7 +52,7 @@ with st.container():
             st.image(image_redhat_form)
 
         with text_column:
-            st.write("Issed on Feb 2013 by [Red Hat](%s)" % redhaturl)
+            st.write("Issed on Feb 2013 by Red Hat, certificate number:130-034-010")
             
 
 
