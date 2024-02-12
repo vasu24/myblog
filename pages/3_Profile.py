@@ -14,7 +14,7 @@ redhaturl="https://www.redhat.com/en"
 
 with st.container():
         st.write("---")
-        st.header("My Patent")
+        st.header("Patent")
         st.write('##')
         image_column, text_column = st.columns((1,2))
         with image_column:
@@ -30,13 +30,14 @@ with st.container():
             
 with st.container():
         st.write("---")
-        st.header("AiU - Certified Tester in Artificial Intelligence (CTAI)")
+        st.header("AiU")
         st.write('##')
         image_column, text_column = st.columns((1,2))
         with image_column:
             st.image(image_aicert_form)
 
         with text_column:
+            st.subheader("AiU - Certified Tester in Artificial Intelligence (CTAI)")
             st.write("Issed by [Brightest](%s)" % url)
             st.write("""
                     Holders of this badge understand what Artificial Intelligence is and are able to comprehend and relate theoretical concepts and practical applications of Machine Learning (ML).
@@ -45,13 +46,14 @@ with st.container():
 
 with st.container():
         st.write("---")
-        st.header("RHEL 6.1 Certified EngineerRHEL 6.1 Certified Engineer")
+        st.header("RHEL")
         st.write('##')
         image_column, text_column = st.columns((1,2))
         with image_column:
             st.image(image_redhat_form)
 
         with text_column:
+            st.subheader("RHEL - 6.1 Certified EngineerRHEL 6.1 Certified Engineer")
             st.write("Issed on Feb 2013 by Red Hat, certificate number:130-034-010")
             
 
