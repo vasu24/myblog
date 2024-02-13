@@ -33,8 +33,7 @@ lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fc
 with st.container():
     st.subheader("Hi, I am Vasudevan Gajjala :wave:")
     st.title("A Quality Engineer from India")
-    st.write("My professional interests are in Cloud Computing, Artifical Intelligence")
-
+    
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
@@ -43,12 +42,39 @@ with st.container():
         st.write(
             """
             - I work in an MNC as a Quality Engineer
+            - My professional interests are in Cloud Computing, Artifical Intelligence, so i keep exploring them
             - Looking for a way to leverage the power of Cloud Computing, Artificial Intelligence.
             - Want to learn Data Science to perform meaningful and impactful analyses. """)
+            
         st.write(" If this sounds intresting to you,consider joining me over [linkedin](%s)" % linkedinurl)
     
     with right_column:
         st_lottie(lottie_coding,height=300,key="coding")
+
+
+# ---- Work With Me ----
+with st.container():
+    st.write("---")
+    st.header("Work With Me!")
+    st.write("##")
+
+   
+    contact_form = """
+    <form action="https://formsubmit.co/vasulak@gmail.COM" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message here" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    """
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.markdown(contact_form, unsafe_allow_html=True)
+    with right_column:
+        st.empty()
+
+
 
     
 
