@@ -5,13 +5,14 @@ from PIL import Image
 st.title("Artificial Intelligence and Testing")
 #st.set_page_config(page_title="My Profile", page_icon=":tada", layout='wide')
 image_kmeans_form = Image.open("images/kmeans1.jpg")
-
+image_silhoutte_form = Image.open("images/Silhouette plot.png")
 # Use local CSS
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 local_css("style/style.css")
+
 
 
 with st.container():
@@ -42,7 +43,25 @@ with st.container():
             - -1: The point is poorly clustered, meaning it is closer to points in other clusters than to points in its own cluster
             - The average silhouette coefficient across all data points is then calculated. This score provides an overall 
               measure of the quality of the clustering. Higher scores indicate better clustering. """)
-        
+     st.write("""Visualization:
+
+Silhouette analysis can also be visualized using a silhouette plot. This plot shows the silhouette coefficient for each data point, along with its cluster assignment. A good silhouette plot will have most points with silhouette coefficients close to 1, indicating that they are well-clustered.
+Image of Silhouette plot in clusteringOpens in a new window""")
+ 
+     st.image(image_silhoutte_form)
+
+     st.write("""Interpretation:
+
+A silhouette score of more than 0.7 is considered to be strong, indicating that the clusters are well-separated.
+A score between 0.5 and 0.7 is considered to be reasonable.
+A score below 0.5 indicates that the clusters may not be well-separated, and you may want to try a different clustering algorithm or number of clusters.
+              
+Limitations:
+
+1. Silhouette analysis is sensitive to the distance metric used.
+              
+2. It may not be suitable for data with highly irregular-shaped clusters.
+              """)
              
      
      
