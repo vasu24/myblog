@@ -4,7 +4,7 @@ from PIL import Image
 st.title("My Profile")
 #st.set_page_config(page_title="My Profile", page_icon=":tada", layout='wide')
 image_patent_form = Image.open("images/patent.jpg")
-image_aicert_form = Image.open("images/aicert.png")
+image_aicert_form = Image.open("images/aicert.jpg")
 image_redhat_form = Image.open("images/redhat.png")
 
 
