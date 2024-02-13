@@ -52,27 +52,6 @@ with st.container():
         st_lottie(lottie_coding,height=300,key="coding")
 
 
-# ---- Work With Me ----
-with st.container():
-    st.write("---")
-    st.header("Work With Me!")
-    st.write("##")
-
-   
-    contact_form = """
-    <form action="https://formsubmit.co/vasulak@gmail.COM" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message here" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-    """
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.markdown(contact_form, unsafe_allow_html=True)
-    with right_column:
-        st.empty()
 
 
 
