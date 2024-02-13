@@ -45,7 +45,7 @@ with st.container():
             - My professional interests are in Cloud Computing, Artifical Intelligence, so i keep exploring them
             - Looking for a way to leverage the power of Cloud Computing, Artificial Intelligence.
             - Want to learn Data Science to perform meaningful and impactful analyses. """)
-            
+        st.header("What I would like to share")    
         st.write(" Testing an Artificial Intelligence is bit different from traditional software testing. I would like to share the information about how can we test such kind of systems.")
         st.write("If this sounds intresting to you,please follow my blog and consider joining me over [linkedin](%s)" % linkedinurl)
     
