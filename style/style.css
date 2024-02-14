@@ -32,6 +32,8 @@ input[type=message], input[type=email], input[type=text], textarea {
   footer {visibility: hidden;}
   header {visibility: hidden;}
 
+  
+
 
   #MainMenu {
   visibility: hidden;

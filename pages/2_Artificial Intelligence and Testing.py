@@ -12,7 +12,18 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 local_css("style/style.css")
-option = st.selectbox('Unsupervised',['KMeans'])
+#option = st.selectbox('Unsupervised',['KMeans'])
+
+col1, col2, col3 = st.columns(3)
+with col1:
+   
+   st.header("")
+   st.selectbox('Supervised',['Decision Trees'])
+
+with col2:
+   st.header("")
+   st.selectbox('Unsupervised',['KMeans'])
+
 
 with st.container():
         st.write("---")
