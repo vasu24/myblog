@@ -13,12 +13,11 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
-
-
+option = st.selectbox('Unsupervised',('KMeans'))
 with st.container():
         st.write("---")
         st.header("Validating KMeans clustering")
-        st.write('##')
+        #st.write('##')
         image_column, text_column = st.columns((1,2))
         with image_column:
             st.image(image_kmeans_form)
