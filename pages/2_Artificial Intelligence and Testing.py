@@ -12,8 +12,8 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 local_css("style/style.css")
+option = st.selectbox('Unsupervised',['KMeans'])
 
-option = st.selectbox('Unsupervised',('KMeans'))
 with st.container():
         st.write("---")
         st.header("Validating KMeans clustering")
